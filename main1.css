@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.banner{
+    height: 400px;
+    margin-top: 200px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.banner.banner-visible h1,
+.banner.banner-visible p{
+    transform: none;
+    opacity: 1;
+}
+
+.banner h1{
+    font-size: 50px;
+    text-shadow: 8px 8px 20px #000;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    /* transition-delay: 1s; */
+    will-change: transform, opacity;
+    background: rgba(7, 0, 101, 0.2);
+    display: inline-block;
+    padding: 10px;
+}
+
+.banner p{
+    font-size: 20px;
+    text-shadow: 8px 8px 20px #000;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    /* transition-delay: 1s; */
+    will-change: transform, opacity;
+    background: rgba(7, 0, 101, 0.2);
+    padding: 10px;
+}
+
+.img-1{
+    background-image: url('teste.jpg');
+}
+
+.img-2{
+    background-image: url('teste2.jpg');
+}
+
+.img-3{
+    background-image: url('teste3.jpg');
+}
+
+.img-4{
+    background-image: url('teste.jpg');
+}
+
+.img-5{
+    background-image: url('teste2.jpg');
+}
